@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sumar o Restar</string>
+    <string name="txtNum1String">Ingrese el primer valor</string>
+    <string name="txtNum2String">Ingrese el segundo valor</string>
+    <string name="rb1">Sumar</string>
+    <string name="rb2">Restar</string>
+    <string name="botonString">Calcular</string>
+    <string name="txtvString">Resultado</string>
+</resources>
