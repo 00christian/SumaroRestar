@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etNum1;
     private EditText etNum2;
     private TextView tv1;
-    private RadioButton rb1, rb2;
+    private RadioButton rb1, rb2,rb3,rb4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
        tv1= (TextView)findViewById(R.id.txtResultado);
        rb1= (RadioButton)findViewById(R.id.rbSumar);
        rb2= (RadioButton)findViewById(R.id.rbRestar);
+        rb3= (RadioButton)findViewById(R.id.rbmultiplicar);
+        rb4= (RadioButton)findViewById(R.id.rbDividir);
     }
 
     public void Calcular (View  view) {
@@ -37,16 +39,23 @@ public class MainActivity extends AppCompatActivity {
         if (rb1.isChecked()== true){
 
             int suma = num1Int +num2Int;
-            String resultado = String.valueOf(suma);
+            String resultado = "El resultado es:  " + String.valueOf(suma);
             tv1.setText(resultado);
 
         }else if (rb2.isChecked()==true){
             int resta= num1Int-num2Int;
-            String resultado = String.valueOf(resta);
+            String resultado = "El resultado es:  " + (String.valueOf(resta));
+            tv1.setText(resultado);
+
+
+        }else if (rb3.isChecked()==true){
+            int multiplicacion= num1Int*num2Int;
+            String resultado = "El resultado es:  " + (String.valueOf(multiplicacion));
             tv1.setText(resultado);
 
 
         }
+
 
 
 

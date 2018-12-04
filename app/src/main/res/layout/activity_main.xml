@@ -36,7 +36,7 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="229dp"
+        android:layout_width="121dp"
         android:layout_height="73dp"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
@@ -65,8 +65,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="48dp"
         android:onClick="Calcular"
         android:text="@string/botonString"
@@ -76,13 +76,50 @@
 
     <TextView
         android:id="@+id/txtResultado"
-        android:layout_width="120dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="288dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="@string/txtvString"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/button"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:layout_width="147dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum2"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <RadioButton
+            android:id="@+id/rbmultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb3"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb4"
+            android:textSize="24sp" />
+    </RadioGroup>
 </android.support.constraint.ConstraintLayout>
